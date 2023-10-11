@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("picture/back.jpg");
+    background-size: 280%;
+    background-position: -400px 0px;
+}
+div.registration{
+    width: 400px;
+    margin: 2px auto 0px auto;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    margin: 10px auto 0px auto;
+    font-family: sans-serif;
+}
+div.registration{
+    background-color: rgb(78, 120, 142);
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px black;
+    box-shadow: 2px 2px 15px rgb(3, 22, 41);
+    color: #ffff;
+}
+form#register{
+    margin: 40px;
+}
+label{
+    font-family: sans-serif;
+    font-size: 18px;
+   
+}
+input#submit{
+    width: 200px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(20, 126, 126);
+}

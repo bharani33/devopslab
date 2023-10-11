@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html> 
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to Our Website</h1>
+    
+    <h2>Login</h2>
+    <form action="login.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="submit" value="Login">
+    </form>
+
+    <h2>Register</h2>
+    <form action="register.php" method="POST">
+        <label for="new-username">New Username:</label>
+        <input type="text" id="new-username" name="new-username" required><br><br>
+        
+        <label for="new-password">New Password:</label>
+        <input type="password" id="new-password" name="new-password" required><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+ </html> -->
+
+<!-- <!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home Page</h2>
+        <p>This is the homepage of our website.</p>
+    </section>
+
+    <section id="login">
+        <h2>Login</h2>
+        <input type="checkbox" id="login-toggle">
+        <label for="login-toggle" class="toggle-label">Open Login Form</label>
+        <form action="your_login_script.php" method="post" class="form-hidden">
+           
+        </form>
+        <p>Don't have an account? <a href="#register">Register here</a></p>
+    </section>
+
+    <section id="register">
+        <h2>Registration</h2>
+        <input type="checkbox" id="register-toggle">
+        <label for="register-toggle" class="toggle-label">Open Registration Form</label>
+        <form action="#" method="post" class="form-hidden">
+           
+        </form>
+        <p>Already have an account? <a href="#login">Login here</a></p>
+    </section>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home Page</h2>
+        <p>This is the homepage of our website.</p>
+        <div id="login" class="hidden">
+            <h2>Login</h2>
+            <form action="your_login_script.php" method="post">
+                <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="submit" value="Login">
+            </form>
+            <p>Don't have an account? <a href="#register">Register here</a></p>
+        </div>
+
+        <div id="register" class="hidden">
+            <h2>Registration</h2>
+            <form action="#" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+    
+                <input type="submit" value="Register">
+            </form>
+            <p>Already have an account? <a href="#login">Login here</a></p>
+        </div>
+    </section>
+</body>
+</html>
