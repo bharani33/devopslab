@@ -1,0 +1,85 @@
+/* Reset some default styles and set a common font family */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Style the header with background, text color, and text alignment */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the navigation menu with a horizontal layout */
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* Style sections */
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style links within the text */
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+/* Display the "Home" section by default */
+#home {
+    display: block;
+}
+
+/* Hide the "Home" section when the "Login" or "Registration" sections are targeted */
+#login:target ~ #home,
+#register:target ~ #home {
+    display: none;
+}
+#login, #register {
+    display: none;
+}
+
+/* Show the selected section when its corresponding link is clicked */
+#login:target, #register:target {
+    display: block;
+}
+
+/* Hide the home section when the login or register section is targeted */
+#login:target ~ #home, #register:target ~ #home {
+    display: none;
+}
+/* Initially hide the "Login" and "Registration" sections */
+#home {
+    display: block;
+}
+
+/* Hide the "Registration" section when the "Login" section is targeted */
+#login:target ~ #register {
+    display: none;
+}
+
+/* Hide the "Login" section when the "Registration" section is targeted */
+#register:target ~ #login {
+    display: none;
+}
